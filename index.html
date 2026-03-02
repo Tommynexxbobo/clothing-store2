@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THREADS - Clothing Store</title>
+    <title>Vintage Hub - Clothing Store</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -17,8 +17,8 @@
         const { useState, useMemo } = React;
 
         const SAMPLE_PRODUCTS = [
-            { id: 1, name: 'Premium Cotton T-Shirt', category: 'tops', price: 29.99, image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=500&fit=crop', color: 'White', size: 'M', rating: 4.5, reviews: 24, description: 'Soft, breathable 100% cotton tee' },
-            { id: 2, name: 'Slim Fit Jeans', category: 'bottoms', price: 59.99, image: 'https://images.unsplash.com/photo-1542272604-787c62d465d1?w=400&h=500&fit=crop', color: 'Dark Blue', size: 'L', rating: 4.8, reviews: 45, description: 'Classic denim with modern fit' },
+            { id: 1, name: 'Shirt', category: 'shirts', price: 5,000, image: 'https://www.instagram.com/p/B5Zmt6aAEPR/?img_index=2', color: 'Denim Blue', size: 'XL', rating: 4.5, reviews: 24, description: 'A catchy denim blue shirt' },
+            { id: 2, name: 'Vintage', category: 'vintage shirt', price: 5,500, image: 'https://www.instagram.com/p/B5cKGntAtwB/?img_index=2', color: 'Dark Blue', size: 'M', rating: 4.8, reviews: 45, description: 'Yellow vintage shirt' },
             { id: 3, name: 'Leather Jacket', category: 'outerwear', price: 129.99, image: 'https://images.unsplash.com/photo-1551028719-00167b16ebc5?w=400&h=500&fit=crop', color: 'Black', size: 'M', rating: 4.9, reviews: 67, description: 'Premium leather with vintage style' },
             { id: 4, name: 'Casual Hoodie', category: 'tops', price: 49.99, image: 'https://images.unsplash.com/photo-1556821552-5282d27db003?w=400&h=500&fit=crop', color: 'Gray', size: 'L', rating: 4.6, reviews: 38, description: 'Cozy fleece-lined hoodie' },
             { id: 5, name: 'Chino Pants', category: 'bottoms', price: 54.99, image: 'https://images.unsplash.com/photo-1473621038790-b3a47b6c1546?w=400&h=500&fit=crop', color: 'Khaki', size: 'M', rating: 4.4, reviews: 22, description: 'Versatile everyday chinos' },
@@ -197,7 +197,7 @@
                                                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                                                     />
                                                     <div className="absolute top-3 right-3 bg-amber-400 text-slate-900 px-3 py-1 rounded-full text-sm font-semibold">
-                                                        ${product.price}
+                                                        ₦{product.price}
                                                     </div>
                                                 </div>
 
